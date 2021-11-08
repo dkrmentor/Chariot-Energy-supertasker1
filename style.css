@@ -1,0 +1,291 @@
+body .text{  
+    font-size: 2.5em;
+    font-weight:bold;
+     word-spacing: 10px;
+ 
+   }
+   
+  header {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 1em;
+    
+     
+} 
+
+ .opacity-low{
+      opacity: 0.3;
+  }
+  .nav1 ul {
+    display: flex;
+    justify-content: space-around;
+  }
+   
+  .nav1 li {
+    list-style: none;
+  }
+
+  .nav1 {
+    flex: 0.7;
+  }
+
+
+  #logo,
+  .nav2 {      
+    flex: 1;
+  }
+  
+
+  
+  .nav2 ul {
+    display: flex;
+    justify-content:flex-end;
+  }
+  
+ 
+  
+  .nav2 li {
+    list-style: none;
+  }
+.main{
+    display: flex;
+    align-items: center;
+
+}
+
+  .form-container {
+    margin: 5% auto;
+	padding: 5%;
+	width: clamp(230px, 40vw, 320px);
+	background: #FFF;
+	border-radius: 8px;
+  
+    box-shadow: 0px 30px 90px rgb(33 21 81 / 10%)
+
+
+
+}
+
+.form-item + .form-item {
+	margin-top: 12px;
+}
+
+.form-submit, .text-head {
+	margin-top: 24px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.input-container {
+	--label-gap: 24px;
+	--input-height: 40px;
+	--input-pad: 16px;
+	
+	display: flex;
+	position: relative;
+	padding-top: var(--label-gap);
+}
+
+.input {
+	width: 100%;
+	border: 1px solid #dedede;
+    background-color: #f3f4f5  ;
+	padding: 0 var(--input-pad);
+	height: var(--input-height);
+	border-radius: 4px;
+}
+
+.input::placeholder {
+	color: transparent;
+}
+
+.input:focus,
+.input:active {
+	outline: none;
+	border-color: #9AADBF;
+	box-shadow: 0 0 2px #9AADBF;
+
+}
+
+.input:focus + .input-label,
+.input:not(:placeholder-shown) + .input-label {
+	color: #01161E;
+	transform: scale(0.75) translateY(calc(var(--input-height) * -1));
+}
+
+.input[type="password"] {
+	font: large Verdana,sans-serif;
+  letter-spacing: 1px;
+}
+
+.input-label {
+	position: absolute;
+	top: var(--label-gap);
+	left: var(--input-pad);
+	transform-origin: left top;
+	transition: transform 0.26s cubic-bezier(0.14, 0.62, 0.43, 1.08);
+	height: var(--input-height);
+	line-height: var(--input-height);
+	color: GREY;
+	pointer-events: none;
+	letter-spacing: 0.3px;
+}
+
+.button {
+	width: 50%;
+	text-align: center;
+	color: #FFF;
+	background-color: #FF6600;
+	border-radius: 4px;
+	border: 0;
+	height: 40px;
+	cursor: pointer;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1%;
+    background: #211551;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+  }
+
+  @media (min-width: 1025px) {
+    .hide-laptop{
+        display: none;
+       
+    }
+  }
+
+  @media (max-width: 1024px) {
+  .hide-mobile{
+      display: none;
+     
+  }
+
+
+  }
+
+
+
+  
+
+  .pricingdiv{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    justify-content: center;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    
+    
+  }
+  
+  .pricingdiv ul.theplan{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    width: 260px; /* width of each table */
+    margin-right: 20px; /* spacing between tables */
+    margin-bottom: 1em;
+    background: #FFF;
+    border-radius: 8px;
+    
+      box-shadow: 0px 30px 90px rgb(33 21 81 / 10%);
+          transition: all .5s;
+          text-align: center;
+  }
+  
+  .pricingdiv ul.theplan:hover{ /* when mouse hover over pricing table */
+    transform: scale(1.05);
+    transition: all .5s;
+    z-index: 100;
+    box-shadow: 0 0 10px gray;
+  }
+  
+  .pricingdiv ul.theplan .center{
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .pricingdiv ul.theplan img{
+    max-width: 80%;
+    height: auto;
+  }
+  
+  .pricingdiv ul.theplan li{
+    padding: 10px 10px;
+    position: relative;
+  }
+  
+  .pricingdiv ul.theplan li.title{
+    font-weight: bold;
+    text-align: center;
+    padding: 3%;
+    background: yellow;
+    color: white;
+    box-shadow: 0 -10px 5px rgba(0,0,0,.1) inset;
+    text-transform: uppercase;
+  }
+  
+  .pricingdiv ul.theplan:nth-of-type(2) li.title{
+    background: red;
+    color: white;
+  }
+      
+  .pricingdiv ul.theplan:nth-of-type(3) li.title{
+    background: white;
+    color: white;
+  }
+  
+  .pricingdiv ul.theplan li b{
+    text-transform: uppercase;
+  }
+  .pricingdiv ul.theplan li.title b{
+    font-size: 250%;
+  }
+  
+  .pricingdiv ul.theplan:last-of-type{ /* remove right margin in very last table */
+    margin-right: 0;
+  }
+  
+  /*very last LI within each pricing UL */
+  .pricingdiv ul.theplan li:last-of-type{
+    text-align: center;
+    margin-top: auto; /*align last LI (price botton li) to the very bottom of UL */
+  }  
+  
+ 
+  
+  @media only screen and (max-width: 600px) {
+    .pricingdiv ul.theplan{
+      border-radius: 0;
+      width: 100%;
+      margin-right: 0;
+    }
+    
+    .pricingdiv ul.theplan:hover{
+      transform: none;
+      box-shadow: none;
+    }
+    
+    
+  }
+  .plan-nav , .gap{
+    display: flex;
+    justify-content:space-around;
+    padding: 10%;
+  }
+
+.headline{
+  text-align: center;
+  margin-top: -2%;
+}
+ 
