@@ -12,6 +12,7 @@ header {
 .nav1 ul {
   display: flex;
   justify-content: space-around;
+  text-align: center;
 }
 
 .nav1 li {
@@ -19,22 +20,22 @@ header {
   
 }
 
-.nav1 {
-  flex: 1;
-}
 
-#logo, .nav2 {
+
+#logo, .nav2 ,.nav1 {
   flex: 1;
 }
 
 .nav2 ul {
   display: flex;
   justify-content: flex-end;
+
 }
 
 .nav2 li {
   list-style: none;
 }
+
 
 .main {
   display: flex;
@@ -228,7 +229,7 @@ header {
 @media only screen and (max-width: 600px) {
   .pricingdiv ul.theplan {
     border-radius: 0;
-    width: 100%;
+    width: 80%;
     margin-right: 0;
   }
   .pricingdiv ul.theplan:hover {
