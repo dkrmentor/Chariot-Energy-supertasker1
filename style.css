@@ -22,10 +22,11 @@ header {
 
 .nav1 li {
   list-style: none;
+  
 }
 
 .nav1 {
-  flex: 0.7;
+  flex: 1;
 }
 
 #logo, .nav2 {
@@ -278,3 +279,28 @@ header, .footer {
   color: white;
   font-size: 100%;
 }
+
+
+.horiz{
+  position: relative;
+}
+.horiz::before{
+  content: '';
+  position: absolute;
+  width:70%;
+  border: 1px solid black;
+  top:10px;
+  right: 120%;
+  
+}
+.horiz::after{
+  content: '';
+  position: absolute;
+  width:70%;
+  border: 1px solid black;
+  top:10px;
+  left: 120%;
+  
+}
+
+
