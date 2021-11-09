@@ -1,14 +1,8 @@
-body .text {
-  font-size: 2.5em;
-  font-weight: bold;
-  word-spacing: 10px;
-}
-
 header {
   align-items: center;
   display: flex;
   justify-content: space-around;
-  margin: 1em;
+  
 }
 
 .opacity-low {
@@ -272,12 +266,20 @@ header, .footer {
   padding: 20px;
 }
 
-.footer {
+.footer1 {
   padding: 1%;
   background: #211551;
   text-align: center;
   color: white;
   font-size: 100%;
+}
+.footer2{
+  padding: 2%;
+  background: #211551;
+  text-align: center;
+  color: white;
+  font-size: 80%;;
+
 }
 
 
